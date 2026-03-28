@@ -70,7 +70,7 @@ export default function Experience() {
           <div key={n} className="bg-white border border-gray-200 rounded-xl p-6 space-y-2">
             <div className="space-y-1">
               <h3 className="font-semibold text-gray-900">
-                St. Ann"s Parish Food Bank
+                St. Ann's Parish Food Bank
               </h3>
               <p className="text-xs text-indigo-600 font-medium">
                 Food Bank Volunteer · Oct. 2015 – Feb. 2019
