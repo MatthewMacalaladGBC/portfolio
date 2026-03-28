@@ -1,60 +1,48 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-6">
 
       {/* ── Hero ── */}
-      <section className="py-12 border-b border-gray-200">
-        <p className="text-sm font-medium text-indigo-600 mb-2 uppercase tracking-widest">
+      <section className="py-16 border-b border-gray-200">
+        <p className="text-sm font-bold text-indigo-600 mb-2 uppercase tracking-widest">
           Portfolio
         </p>
-        <h1 className="text-5xl font-bold text-gray-900 tracking-tight mb-3">
+        <h1 className="text-5xl font-bold text-gray-900 tracking-tight mb-2">
           Matthew Macalalad
         </h1>
-        <p className="text-xl text-gray-500 mb-6">
-          TODO: Title / Program
+        <p className="text-lg text-gray-500 mb-5">
+          George Brown Polytechnic, Computer Programming & Analysis
         </p>
-        <p className="max-w-2xl text-gray-600 leading-relaxed mb-8">
-          TODO: Brief tagline (about me)
+        <p className="text-xl text-indigo-600 leading-relaxed mb-8">
+          Passionate, driven, and always looking to learn
         </p>
         <div className="flex gap-3 flex-wrap">
-          <Link
-            to="/resume"
-            className="px-5 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
-          >
-            View Resume
-          </Link>
-          <Link
-            to="/projects"
-            className="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            View Projects
-          </Link>
           <a
-            href="#"
-            className="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="#"
-            className="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors"
+            href="https://github.com/MatthewMacalaladGBC"
+            className="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 text-base font-medium rounded-lg hover:bg-gray-50 transition-colors"
           >
             GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/matthew-macalalad/"
+            className="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 text-base font-medium rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            LinkedIn
           </a>
         </div>
       </section>
 
       {/* ── Quick nav cards ── */}
       <section>
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">Explore</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <h2 className="text-lg font-semibold text-gray-900 mb-5">Explore</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { to: '/about', title: 'About', desc: 'Bio, career philosophy, and personal details' },
-            { to: '/projects', title: 'Projects', desc: 'Academic work samples and capstone project' },
-            { to: '/experience', title: 'Experience', desc: 'Professional samples, volunteer work, and awards' },
-            { to: '/resume', title: 'Resume', desc: 'Resume PDF and cover letter template' },
+            { to: "/about", title: "About", desc: "Bio, career philosophy, and personal details" },
+            { to: "/projects", title: "Projects", desc: "Academic work samples and capstone project" },
+            { to: "/experience", title: "Experience", desc: "Professional experience, volunteer work, and awards" },
+            { to: "/resume", title: "Resume", desc: "Resume and cover letter" },
           ].map(({ to, title, desc }) => (
             <Link
               key={to}

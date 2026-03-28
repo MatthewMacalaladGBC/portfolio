@@ -1,8 +1,8 @@
 export default function Resume() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-6">
 
-      <div className="border-b border-gray-200 pb-6">
+      <div className="border-b border-gray-200 pb-8">
         <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Resume & Cover Letter</h1>
       </div>
 
@@ -10,7 +10,6 @@ export default function Resume() {
       <section className="space-y-3">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-semibold text-gray-900">Resume</h2>
-          {/* TODO: Replace with actual path to resume PDF (copy to /portfolio/resume.pdf) */}
           <a
             href="#"
             className="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
@@ -19,18 +18,8 @@ export default function Resume() {
           </a>
         </div>
 
-        {/* TODO: Place resume PDF in /public/resume.pdf and update src below */}
-        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-          <div className="h-[700px] flex items-center justify-center bg-gray-50">
-            <div className="text-center space-y-2">
-              {/* TODO: Add resume PDF to <code className="bg-gray-100 px-1.5 py-0.5 rounded text-xs">public/resume.pdf</code> */}
-              {/* 
-                <code className="bg-gray-100 px-1.5 py-0.5 rounded text-xs">
-                  {'<iframe src="/portfolio/resume.pdf" className="w-full h-full" />'}
-                </code>
-              */}
-            </div>
-          </div>
+        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden h-[700px]">
+          <iframe src="/portfolio/Résumé.pdf" className="w-full h-full" />
         </div>
       </section>
 
@@ -38,7 +27,7 @@ export default function Resume() {
       <section className="space-y-3">
         <h2 className="text-xl font-semibold text-gray-900">Cover Letter (Template)</h2>
         <p className="text-sm text-gray-500">
-          Cover letter for x position
+          Cover letter for x position [STILL NEED TO DO]
         </p>
 
         <div className="bg-white border border-gray-200 rounded-xl p-8 space-y-6 font-serif text-gray-700 text-sm leading-relaxed">
